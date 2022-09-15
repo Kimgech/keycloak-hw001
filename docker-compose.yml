@@ -44,7 +44,7 @@ services:
     restart: unless-stopped
     container_name: keycloak-server-demo
     volumes:
-      - ../keycloak/realm.json:/opt/realm.json
+      - ./keycloak/realm.json:/opt/realm.json
     environment:
       <<: *keycloak-env
     ports:

@@ -1,7 +1,6 @@
 package com.example.webfluxdemo.router
 
 import com.example.webfluxdemo.handler.CloudInstanceHandler
-import com.example.webfluxdemo.handler.HelloHandler
 import com.example.webfluxdemo.handler.OSHandler
 import org.springframework.context.annotation.Bean
 import org.springframework.context.annotation.Configuration
@@ -10,7 +9,7 @@ import org.springframework.web.reactive.function.server.ServerResponse
 import org.springframework.web.reactive.function.server.router
 
 @Configuration
-class CloudRouter(val handler: HelloHandler, val cloudInstanceHandler: CloudInstanceHandler, val osHandler: OSHandler) {
+class CloudRouter(val cloudInstanceHandler: CloudInstanceHandler, val osHandler: OSHandler) {
 
 //    @Bean
 //    fun helloWorld(): RouterFunction<ServerResponse> =
